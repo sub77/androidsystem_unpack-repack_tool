@@ -37,7 +37,7 @@ elif
                 exit 0
             fi
             sudo test -d ./output && rm -rf ./output; mkdir ./output
-            BLOCK_SIZE="2415919104"
+            BLOCK_SIZE="2566914048"
                 for system in $BLOCK_SIZE; do
                 ./tools/make_ext4fs -T 0 -S ./input/file_contexts -l $system -a system my_new_system.img system/
             done
